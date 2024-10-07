@@ -1,0 +1,172 @@
+* {
+    margin: 0;
+    padding: 0;
+    font-family: sans-serif;
+}
+header {
+    text-align: center;
+    padding: 20px; 
+}
+body{
+    background-color: #b7baaa4f;
+}
+
+.dropdown {
+    display: none; 
+    position: absolute; 
+    background-color: #f4eded;
+    list-style: none;
+    border-radius: 15px;
+}
+.navbar li:hover .dropdown {
+    display: list-item;
+}
+.dropdown li {
+    padding: 10px 15px;
+    color: rgb(12, 12, 12);
+}
+.dropdown li:hover {
+    background-color: #b9b1b1;
+    color: rgba(224, 37, 37, 0.991);
+}
+
+.logo{
+    width: auto;
+    height: 60px;
+    margin-left: 90px;
+    margin-top: 13px;
+}
+.navbar a{
+    text-decoration: none;
+}
+.navbar{
+    display: flex;
+    list-style: none;
+    justify-content: flex-end;
+    margin-right: 60px;
+    gap: 45px;
+    font-size: 20px;
+    background-color: rgba(255, 252, 252, 0.9); 
+    width: 95%;
+    padding: 30px;
+    margin-top: -75px;
+
+}
+
+
+.gallery {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center; 
+    margin: 20px;
+}
+.gallery-item {
+    margin: 10px;
+    transition: transform 0.3s, box-shadow 0.3s;
+}
+.gallery-item img {
+    width: 300px; 
+    height: 200px; 
+    border-radius: 8px;
+    cursor: pointer;
+}
+.gallery-item:hover {
+    transform: scale(1.05); 
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2); 
+}
+.button { 
+    text-align: center;
+    margin: 20px;
+} 
+button {
+    background-color: rgb(24, 23, 21);
+    padding: 15px 30px;
+    font-size: 16px; 
+    border-radius: 5px;  
+    cursor: pointer; 
+    transition: background-color 0.3s ease, transform 0.3s ease; 
+}
+button:hover {
+    background-color: #3e3f3e; 
+    transform: scale(1.05);  
+}
+a {
+    color: rgb(13, 12, 12); 
+    text-decoration: none; 
+} 
+footer {
+    background-color: #333; 
+    color: white;  
+    padding: 10px;
+    display: flex;
+    flex-wrap: wrap;
+}
+.contact-map-container {
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap; 
+}
+.contact-info {
+    margin-left: 200px; 
+    flex: 1; 
+}
+.contact-info h2 {
+    color: orange;
+    font-size: 30px;
+    margin-top: 20px; 
+}
+
+.google-map {
+    margin-left: 400px; 
+    margin-bottom: 70px;
+}
+.google-map h3 {
+    color: orange;
+    font-size: 30px; 
+    margin-bottom: 50px; 
+
+}
+
+
+@media (max-width: 768px) {
+    .gallery-item img {
+        width: 100%; 
+        height: auto; 
+    }
+    .contact-map-container {
+        flex-direction: column; 
+        align-items: center; 
+    }
+    .contact-info, .google-map {
+        margin: 10px 0; 
+        text-align: center; 
+        width: 90%; 
+    }
+    .contact-info h2 {
+        font-size: 24px; 
+    }
+}
+
+@media (max-width: 480px) {
+    header h1 {
+        font-size: 24px; 
+    }
+    button {
+        width: 100%; 
+        padding: 10px; 
+    }
+}
+@media (max-width: 480px){
+.navbar {
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    margin-right: 0;
+    gap: 20px;
+    margin-top: 10px;
+}
+
+.logo {
+    margin-left: 70px;
+}
+}
